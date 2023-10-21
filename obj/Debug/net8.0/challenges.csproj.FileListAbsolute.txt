@@ -31,3 +31,4 @@
 /home/serroda/Código/challenges/obj/Debug/net8.0/challenges.pdb
 /home/serroda/Código/challenges/obj/Debug/net8.0/challenges.genruntimeconfig.cache
 /home/serroda/Código/challenges/obj/Debug/net8.0/ref/challenges.dll
+/home/serroda/Código/challenges/obj/Debug/net8.0/challenges.sourcelink.json
