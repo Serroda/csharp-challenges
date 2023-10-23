@@ -6,33 +6,53 @@ namespace challenges.Controllers
     [ApiController]
     [Route("api/[controller]")]
     //https://www.codewars.com/kata/56cac350145912e68b0006f0
+
     public class UpAndDownController : ControllerBase
     {
         [HttpGet("{phrase}")]
         public ActionResult<string> OrderString(string phrase)
         {
+            string[] words = phrase.Split(" ");
 
-
-            List<string> words = [.. phrase.Split(" ")];
-
-            for (int i = 0; i < words.Count; i++)
+            for (int i = 0; i < words.Length; i++)
             {
-
                 string word = words[i];
 
-                for (int x = 0; x < words.Count; x++)
+                for (int x = i + 1; x < words.Length; x++)
                 {
+                    string compareWord = words[x];
 
-                    switch (i)
+                    if ((x - 1) % 2 == 0)
                     {
-                    //TODO
+                        if (word.Length > compareWord.Length)
+                        {
+                            words[x - 1] = compareWord;
+                            words[x] = word;
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
-                }
+                    else
+                    {
+                        if (word.Length < compareWord.Length)
+                        {
+                            words[x - 1] = compareWord;
+                            words[x] = word;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
 
+
+                }
             }
 
-
-            return Ok(words.ToString());
+            return Ok(string.Join(" ", 
+            words.Select((word, index) => (index % 2 == 0) ? word.ToLower() : word.ToUpper())));
         }
     }
 }
