@@ -17,3 +17,4 @@ http://localhost:5111/swagger/index.html
 - [Jaden Casing Strings](https://www.codewars.com/kata/5390bac347d09b7da40006f6) 
 - [Multiples of 3 or 5](https://www.codewars.com/kata/514b92a657cdc65150000006)
 - [Up and down](https://www.codewars.com/kata/56cac350145912e68b0006f0)
+- [Break camelCase](https://www.codewars.com/kata/5208f99aee097e6552000148)
