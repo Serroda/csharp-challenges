@@ -11,16 +11,12 @@
     https://www.codewars.com/kata/526989a41034285187000de4 
 */
 
+using challenges.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace challenges.Controllers
 {
 
-    public class Params
-    {
-        public required string FirstIp { get; set; }
-        public required string SecondIp { get; set; }
-    }
 
     [ApiController]
     [Route("api/[controller]")]
@@ -28,7 +24,7 @@ namespace challenges.Controllers
     public class CountIPController : ControllerBase
     {
         [HttpPost]
-        public ActionResult<long> Calculate(Params Addresses)
+        public ActionResult<long> Calculate(IpsDto Addresses)
         {
 
             int[] firstIp = Addresses.FirstIp
@@ -42,11 +38,11 @@ namespace challenges.Controllers
                             .ToArray();
 
             double result = 0;
-            
+
             for (int i = 0; i < firstIp.Length; i++)
             {
-                result += Math.Pow(256 , firstIp.Length - (i + 1)) *
-                            (secondIp[i] -  firstIp[i]);
+                result += Math.Pow(256, firstIp.Length - (i + 1)) *
+                            (secondIp[i] - firstIp[i]);
             }
 
             return Ok(result);

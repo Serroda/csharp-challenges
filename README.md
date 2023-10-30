@@ -19,3 +19,4 @@ http://localhost:5111/swagger/index.html
 - [Up and down](https://www.codewars.com/kata/56cac350145912e68b0006f0)
 - [Break camelCase](https://www.codewars.com/kata/5208f99aee097e6552000148)
 - [Count IP Addresses](https://www.codewars.com/kata/526989a41034285187000de4)
+- [RGB to Hex Conversion](https://www.codewars.com/kata/513e08acc600c94f01000001)
