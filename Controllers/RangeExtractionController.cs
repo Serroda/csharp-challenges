@@ -14,6 +14,7 @@ https://www.codewars.com/kata/51ba717bb08c1cd60f00002f
 */
 
 using System.Text;
+using challenges.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace challenges.Controllers
@@ -23,29 +24,26 @@ namespace challenges.Controllers
     public class RangeExtractionController : ControllerBase
     {
         [HttpPost]
-        public ActionResult<string> Format(int[] args)
+        public ActionResult<string> Format(RangeDto args)
         {
 
             StringBuilder result = new();
             List<int> range = [];
 
-            for (int i = 0; i < args.Length; i++)
+            for (int i = 0; i < args.Serie.Length; i++)
             {
-                int value = args[i];
-                int? nextValue = ((i + 1) == args.Length) ? null : args[i + 1];
+                int value = args.Serie[i];
+                int? nextValue = ((i + 1) == args.Serie.Length) ? null : args.Serie[i + 1];
 
                 if (value + 1 == nextValue)
                 {
                     range.Add(value);
                     continue;
                 }
-                else if (range.Count >= 2)
+                else if (range.Count >= 2 || range.Count > 0)
                 {
-                    result.Append(range.First().ToString() + '-' + value.ToString());
-                    range.RemoveRange(0, range.Count);
-                }
-                else if(range.Count != 0){
-                    result.Append(range.First().ToString() + ',' + value.ToString());
+                    char separator = (range.Count >= 2) ? '-' : ',';
+                    result.Append(range.First().ToString() + separator + value.ToString());
                     range.RemoveRange(0, range.Count);
                 }
                 else
@@ -53,7 +51,7 @@ namespace challenges.Controllers
                     result.Append(value.ToString());
                 }
 
-                if((i + 1) != args.Length) {
+                if((i + 1) != args.Serie.Length) {
                     result.Append(',');
                 }
             }
