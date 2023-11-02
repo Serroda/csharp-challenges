@@ -21,3 +21,4 @@ http://localhost:5111/swagger/index.html
 - [Count IP Addresses](https://www.codewars.com/kata/526989a41034285187000de4)
 - [RGB to Hex Conversion](https://www.codewars.com/kata/513e08acc600c94f01000001)
 - [Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f)
+- [Sum of Intervals](https://www.codewars.com/kata/52b7ed099cdc285c300001cd)
