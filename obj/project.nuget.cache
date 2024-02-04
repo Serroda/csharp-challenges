@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tjyyl5KJi5dZRF3ucknJxG5+XkAlxfBItnbj2aNkTSOPD8nAVbamIA38vQ+rjEp92C7Ns+KtmFSxF+7wt1eaKw==",
+  "dgSpecHash": "V/J8dUCuRQBkLbJHvbztcl+cVDRAPVLe/u9vAtFCggTvdUC5tcsymYQL+lit5P5M7ZBCXweFVmllYZvMkAqsIQ==",
   "success": true,
-  "projectFilePath": "/home/serroda/Código/challenges/challenges.csproj",
+  "projectFilePath": "/home/serroda/Código/csharp-challenges/challenges.csproj",
   "expectedPackageFiles": [
     "/home/serroda/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "/home/serroda/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

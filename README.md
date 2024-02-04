@@ -6,13 +6,13 @@ Challenges from [CodeWars](https://www.codewars.com)
 
 Write in the terminal
 
-```
+```bash
 dotnet run 
 ```
 
 and open Swagger
 
-```
+```bash
 http://localhost:5111/swagger/index.html
 ```
 
@@ -28,3 +28,4 @@ http://localhost:5111/swagger/index.html
 - [Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f)
 - [Sum of Intervals](https://www.codewars.com/kata/52b7ed099cdc285c300001cd)
 - [Most frequently used words in a text](https://www.codewars.com/kata/51e056fe544cf36c410000fb)
+- [The observed PIN](https://www.codewars.com/kata/5263c6999e0f40dee200059d/train/csharp)

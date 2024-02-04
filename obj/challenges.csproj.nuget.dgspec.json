@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/serroda/Código/challenges/challenges.csproj": {}
+    "/home/serroda/Código/csharp-challenges/challenges.csproj": {}
   },
   "projects": {
-    "/home/serroda/Código/challenges/challenges.csproj": {
+    "/home/serroda/Código/csharp-challenges/challenges.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/serroda/Código/challenges/challenges.csproj",
+        "projectUniqueName": "/home/serroda/Código/csharp-challenges/challenges.csproj",
         "projectName": "challenges",
-        "projectPath": "/home/serroda/Código/challenges/challenges.csproj",
+        "projectPath": "/home/serroda/Código/csharp-challenges/challenges.csproj",
         "packagesPath": "/home/serroda/.nuget/packages/",
-        "outputPath": "/home/serroda/Código/challenges/obj/",
+        "outputPath": "/home/serroda/Código/csharp-challenges/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/serroda/.nuget/NuGet/NuGet.Config"
